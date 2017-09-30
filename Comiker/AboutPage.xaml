@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+x:Class="Comiker.AboutPage"
+Title="About Page">
+  <ContentPage.Padding>
+   <OnPlatform x:TypeArguments="Thickness"
+              iOS="20, 40, 20, 20"
+              Android="20, 20, 20, 20"
+              WinPhone="20, 20, 20, 20" />
+  </ContentPage.Padding>
+  <ContentPage.Content>
+    <ScrollView>
+      <StackLayout>
+                <!--number will be replaced by number of page selected by user-->
+          <Label Text="PAGE NUMBER" />
+                <!--when clicked must have an option to either take from gallery or take picture from camera. picture loaded will display below add image button-->
+          <Label Text="REFERENCE IMAGES" />
+          <Button x:Name="AddImageButton" Text="+ ADD IMAGE" Clicked="AddImageButton_OnClicked" />
+                <!--when clicked this adds an item to the list. the item should contain a text field about characters present, dialog, other notes-->
+          <Label Text="PANELS" />
+          <Button x:Name="AddPanelButton" Text="+ ADD PANEL" Clicked="AddPanelButton_OnClicked" />
+      </StackLayout>
+    </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

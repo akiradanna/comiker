@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+x:Class="Comiker.ComikerPage"
+Title="Projects">
+  <ContentPage.Padding>
+        <!--this part is just to make the appearance look good-->
+   <OnPlatform x:TypeArguments="Thickness"
+              iOS="20, 40, 20, 20"
+              Android="20, 20, 20, 20"
+              WinPhone="20, 20, 20, 20" />
+  </ContentPage.Padding>
+  <ContentPage.Content>
+    <StackLayout Spacing="10" x:Name="layout">
+            <!--this part is obvious. it will be viewable to the user when the screen is initialized-->
+      <Label Text="PROJECTS" />
+      <Button x:Name="AddProjectButton" Text="+ ADD PROJECT" Clicked="AddProjectButton_OnClicked" />
+            <!--these would be hidden in initialization. only appears when "+ add project" is pressed-->
+      <Label x:Name="ProjectTitle" Text="NEW PROJECT TITLE" />
+      <Editor x:Name="EnterTitle" Text="" />
+      <Button x:Name="CreateProjectButton" Text="CREATE" Clicked="CreateProjectButton_OnClicked" />
+      <Button x:Name="CancelProjectButton" Text="CANCEL" Clicked="CancelProjectButton_OnClicked" />
+            <!--this is the list of projects. length depends on how many projects there are. i wanna make projects as folders so the title would be the folder name-->
+            <!--also the list items are clickable. clicking it will direct the user to AboutProject. there should also be rename and delete buttons-->
+      <ListView  x:Name="ProjectList">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout BackgroundColor="#eee"
+                        Orientation="Vertical">
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding title}"
+                                TextColor="#f35e20" />
+                                <Label Text="{Binding subtitle}"
+                                HorizontalOptions="EndAndExpand"
+                                TextColor="#503026" />
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+     </StackLayout>
+  </ContentPage.Content>
+</ContentPage>

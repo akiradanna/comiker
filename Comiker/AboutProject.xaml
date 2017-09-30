@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+x:Class="Comiker.AboutProject"
+Title=" About Project">
+  <ContentPage.Padding>
+   <OnPlatform x:TypeArguments="Thickness"
+              iOS="20, 40, 20, 20"
+              Android="20, 20, 20, 20"
+              WinPhone="20, 20, 20, 20" />
+  </ContentPage.Padding>
+  <ContentPage.Content>
+    <ScrollView>
+      <StackLayout>
+                <!--'project name' would be replaced by the name of the project, so it depends on what the user chose.-->
+          <Label Text="PROJECT NAME" />
+                <!--user can enter a summary. when not focused it automatically saves to the project-->
+          <Label Text="SUMMARY" />
+          <Editor Text="" />
+                <!--like '+ add project', pressing either of the add buttons will trigger the same entry and create/cancel buttons-->
+                <!--clicking on an item in the character list will lead the user to an AboutCharacter page on the selected character-->
+                <!--and clicking an item in the chapter list leads to Pages related to the chapter-->
+          <Label Text="CHARACTERS" />
+          <Button x:Name="AddCharacterButton" Text="+ ADD CHARACTER" Clicked="AddCharacterButton_OnClicked" />
+          <Label Text="CHAPTERS" />
+          <Button x:Name="AddChapterButton" Text="+ ADD CHAPTER" Clicked="AddChapterButton_OnClicked" />
+      </StackLayout>
+    </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

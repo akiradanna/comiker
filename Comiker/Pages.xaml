@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+x:Class="Comiker.Pages"
+Title="Pages">
+  <ContentPage.Padding>
+   <OnPlatform x:TypeArguments="Thickness"
+              iOS="20, 40, 20, 20"
+              Android="20, 20, 20, 20"
+              WinPhone="20, 20, 20, 20" />
+  </ContentPage.Padding>
+  <ContentPage.Content>
+    <ScrollView>
+      <StackLayout>
+                <!--'chapter number' will be replaced by either the chapter number or title the user has selected-->
+          <Label Text="CHAPTER NUMBER" />
+                <!--like summary in AboutProject, user can enter the title and the summary and unfocusing it will automatically save what's entered-->
+          <Label Text="TITLE" />
+          <Entry Text="" />
+          <Label Text="SUMMARY" />
+          <Editor Text="" />
+                <!--add pages will automatically add a page with a number. user should be able to delete page. when user chooses a page the user is directed to About Page related to the page selected-->
+          <Label Text="PAGES" />
+          <Button x:Name="AddPageButton" Text="+ ADD PAGES" Clicked="AddPageButton_OnClicked" />
+      </StackLayout>
+    </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

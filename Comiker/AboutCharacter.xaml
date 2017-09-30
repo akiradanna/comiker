@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+x:Class="Comiker.AboutCharacter"
+Title="About Character">
+  <ContentPage.Padding>
+   <OnPlatform x:TypeArguments="Thickness"
+              iOS="20, 40, 20, 20"
+              Android="20, 20, 20, 20"
+              WinPhone="20, 20, 20, 20" />
+  </ContentPage.Padding>
+  <ContentPage.Content>
+    <ScrollView>
+      <StackLayout>  
+                <!--'character' will be replaced by the name of character selected-->
+          <Label Text="CHARACTER" />
+                <!--when clicked must have an option to either take from gallery or take picture from camera. picture loaded will display below add image button-->
+          <Label Text="REFERENCE IMAGES" />
+          <Button x:Name="AddImageButton" Text="+ ADD IMAGE" Clicked="AddImageButton_OnClicked" />
+                <!--again when unfocused will automatically save-->
+          <Label Text="NAME" />
+          <Entry Text="" />
+          <Label Text="ROLE" />
+          <Entry Text="" />
+          <Label Text="PHYSICAL ATTRIBUTES" />
+          <Editor Text="" />
+          <Label Text="PERSONALITY" />
+          <Editor Text="" />
+          <Label Text="NOTES" />
+          <Editor Text="" />
+                <!--enables user to add their own text fields like the one above. when this is clicked, text field and 2 buttons (create and cancel) should appear-->
+          <Label Text="CUSTOM NOTES" />
+          <Button x:Name="AddCustomButton" Text="+ ADD CUSTOM NOTE" Clicked="AddCustomButton_OnClicked" />
+      </StackLayout>
+    </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

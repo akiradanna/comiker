@@ -1,0 +1,24 @@
+﻿<Properties StartupConfiguration="{153A1F80-832A-4980-B156-394BD86EC69F}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Comiker/AboutProject.xaml.cs">
+    <Files>
+      <File FileName="Comiker/App.xaml.cs" Line="18" Column="9" />
+      <File FileName="Comiker/ComikerPage.xaml" Line="24" Column="148" />
+      <File FileName="Comiker/ComikerPage.xaml.cs" Line="41" Column="51" />
+      <File FileName="Comiker/AboutProject.xaml" Line="20" Column="57" />
+      <File FileName="Comiker/AboutProject.xaml.cs" Line="20" Column="41" />
+      <File FileName="Comiker/Pages.xaml" Line="22" Column="200" />
+      <File FileName="Comiker/Pages.xaml.cs" Line="18" Column="42" />
+      <File FileName="Comiker/AboutPage.xaml" Line="16" Column="39" />
+      <File FileName="Comiker/AboutPage.xaml.cs" Line="23" Column="35" />
+      <File FileName="Comiker/AboutCharacter.xaml" Line="18" Column="44" />
+      <File FileName="Comiker/AboutCharacter.xaml.cs" Line="31" Column="42" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Comiker.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Nexus_5_API_25" />
+  <MultiItemStartupConfigurations />
+</Properties>
